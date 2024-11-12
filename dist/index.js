@@ -28099,6 +28099,7 @@ async function run() {
     process.env.P12_CER_PATH = core.getInput("p12-cer-path");
     process.env.MOBILEPROVISION_PATH = core.getInput("mobileprovision-path");
     process.env.PROJECT_PATH = core.getInput("project-path");
+    process.env.DERIVED_DATA_PATH = core.getInput("derived-data-path");
     process.env.CODE_SIGNING_IDENTITY = core.getInput("code-signing-identity");
     process.env.TEAM_ID = core.getInput("team-id");
     process.env.WORKSPACE_PATH = core.getInput("workspace-path");

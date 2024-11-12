@@ -203,7 +203,8 @@ platform :ios do
       scheme: ENV['SCHEME'],
       output_directory: File.dirname(ENV['OUTPUT_PATH']),
       output_name: File.basename(ENV['OUTPUT_PATH']),
-      clean: true,
+      clean: ENV['DERIVED_DATA_PATH'].nil?, # Skip clean if DERIVED_DATA_PATH is provided
+      derived_data_path: ENV['DERIVED_DATA_PATH'], # Use derived data path if supplied
       cloned_source_packages_path:
         if use_cloned_source_packages_path
           ENV['CLONED_SOURCE_PACKAGES_PATH']

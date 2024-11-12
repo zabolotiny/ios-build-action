@@ -118,6 +118,9 @@ inputs:
     description: 'Custom Keychain Name'
     required: false
     default: "ios-build.keychain"
+  derived-data-path:
+    description: 'Derived Data Path'
+    required: false
 runs:
   using: "node20"
   main: "dist/index.js"
