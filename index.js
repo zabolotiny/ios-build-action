@@ -66,6 +66,7 @@ async function run() {
     process.env.APP_STORE_CONNECT_API_KEY_BASE64 = core.getInput('app-store-connect-api-key-base64');
     process.env.BUILD_PATH = core.getInput('build-path');
     process.env.DERIVED_DATA_PATH = core.getInput('derived-data-path');
+    process.env.CLEAN_BUILD = core.getInput('clean-build');
     process.env.CUSTOM_KEYCHAIN_NAME = core.getInput('custom-keychain-name');
 
     // Execute build.sh

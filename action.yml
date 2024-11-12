@@ -121,6 +121,10 @@ inputs:
   derived-data-path:
     description: 'Derived Data Path'
     required: false
+  clean-build:
+    description: 'Clean Derived Data'
+    required: false
+    default: false
 runs:
   using: "node20"
   main: "dist/index.js"
